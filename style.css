@@ -1,0 +1,110 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF8EF;
+  color: #3A6948;
+  font-family: Tahoma;
+  font-size: 16px; 
+  margin: 4rem  0;
+  margin-bottom: 4rem;
+}
+
+h1 {
+color: #709259; 
+text-align: center;
+font-weight: normal;
+font-family: Poppins;
+}
+
+h1 span {
+color: #709259; 
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+p {
+ text-align: center; 
+ font-weight: bold;
+}
+
+p span {
+font-weight: normal;
+font-size: 0.8rem;
+}
+
+
+div {
+  border: none;
+  padding: 1rem 0;
+  
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 4rem auto;
+  padding: 0 3rem;
+  border: 3px solid #B3BA6A;
+  border-radius: 0.5rem;
+}
+
+label, select, textarea {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.data {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 3px solid #B3BA6A;
+  border-radius: 0.5rem;
+  font-family: Tahoma;
+  color:#709259;
+  
+}
+
+
+
+.title-question {
+  text-align: left;
+  font-weight: bold;
+}
+
+input {
+  background-color: white; 
+
+  }
+
+.submit-botton{
+  border: none;  
+}
+
+input[type=submit] {
+  border: none;
+  padding: 0.5rem 3rem;
+  margin: auto 30%;
+  background-color: #709259;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  font-family: Poppins;
+  cursor: pointer;
+}
+
+input[type=checkbox]{
+margin-right: 0.5rem;
+
+}
+
+footer {
+  height: 5vh
+}
+
