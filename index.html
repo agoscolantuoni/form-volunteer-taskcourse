@@ -1,78 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>JxClima</title>
     <link rel="stylesheet" href="styles.css" />
-    </head>
- <body>
-<h1 id="title">Welcome to<br><span>Jóvenes por el Clima<span></h1>
-<p id="description">Thanks for your interest in volunteering with us!</p>
+  </head>
+  <body>
+    <h1 id="title">Welcome to<br /><span>Jóvenes por el Clima</span></h1>
+    <p id="description">Thanks for your interest in volunteering with us!</p>
 
-<form id="survey-form">
+    <form id="survey-form">
+      <div>
+        <label class="title-question" id="name-label" for="name"
+          >Name
+          <input
+            class="data"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your full name"
+            required
+        /></label>
+      </div>
 
-  <div>
-    <label class="title-question" id="name-label" for="name">Name <input class="data" id="name" name="name" type="text" placeholder="Enter your full name" required /></label>
-    </div>
+      <div>
+        <label class="title-question" id="email-label" for="email"
+          >Email
+          <input
+            class="data"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+      </div>
 
-  <div>
-    <label  class="title-question" id="email-label" for="email">Email <input class="data" id="email" name="email" type="email" placeholder="Enter your email" required /></label>
-    </div>
+      <div>
+        <label class="title-question" id="number-label" for="number"
+          >Age
+          <input
+            class="data"
+            id="number"
+            name="number"
+            type="number"
+            min="15"
+            max="99"
+            placeholder="Enter your age"
+            required
+        /></label>
+      </div>
 
-  <div>
-   <label class="title-question" id="number-label" for="number">Age <input class="data" id="number" name="number" type="number" min="15" max="99" placeholder="Enter your age" required /></label>
-    </div>
-  
- <div>
-    <p class="title-question">How you knew us?</p>
-   <label for="source"><input id="source" name="source" type="radio" value="social" checked />Social networks</label>
-   <label for="source"><input id="source" name="source" type="radio" value="friends" />Friends</label>
-   <label for="source"><input id="source" name="source" type="radio" value="television" />Television</label>
-   <label for="source"><input id="source" name="source" type="radio" value="paper" />Newspapers and magazines</label>
-    </div>
+      <div>
+        <p class="title-question">How you knew us?</p>
+        <label for="source"
+          ><input
+            id="source"
+            name="source"
+            type="radio"
+            value="social"
+            checked
+          />Social networks</label
+        >
+        <label for="source"
+          ><input
+            id="source"
+            name="source"
+            type="radio"
+            value="friends"
+          />Friends</label
+        >
+        <label for="source"
+          ><input
+            id="source"
+            name="source"
+            type="radio"
+            value="television"
+          />Television</label
+        >
+        <label for="source"
+          ><input
+            id="source"
+            name="source"
+            type="radio"
+            value="paper"
+          />Newspapers and magazines</label
+        >
+      </div>
 
-  <div>
-   <label for="dropdown">
-     <p class="title-question">In which of our work teams would you like to collaborate?</p>
-     <select class="data" id="dropdown">
-       <option value="">(Select one)</option>
-       <option value="1">Events, exhibitions and demonstrations</option>
-       <option value="2">Awareness and education</option>
-       <option value="3">Marketing / Design</option>
-       <option value="4">Research and current affairs</option>
-       <option value="5">Public relations</option>
-        </select>
-       </label>
-    </div>
+      <div>
+        <label for="dropdown">
+          <p class="title-question">
+            In which of our work teams would you like to collaborate?
+          </p>
+          <select class="data" id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Events, exhibitions and demonstrations</option>
+            <option value="2">Awareness and education</option>
+            <option value="3">Marketing / Design</option>
+            <option value="4">Research and current affairs</option>
+            <option value="5">Public relations</option>
+          </select>
+        </label>
+      </div>
 
-   <div>
-    <p class="title-question">In which tasks would you feel comfortable collaborating? <span>(Check all that apply)<span></p>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="campaign" type="checkbox" />Campaign organization</label>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="event" type="checkbox" />Event organization</label>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="connections" type="checkbox" />Create connections with other organizations/people</label>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="speak" type="checkbox" />Write and speak in public</label>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="record-you" type="checkbox" />Record you in videos for networks</label>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="content-creation" type="checkbox" />Creation creation / designs / videos</label>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="website" type="checkbox" />Management and development of the website</label>
-    <label for="voluntary"><input id="voluntary" name="voluntary" value="social-media" type="checkbox" />Social media management</label>
-    </div>
+      <div>
+        <p class="title-question">
+          In which tasks would you feel comfortable collaborating?
+          <span>(Check all that apply)</span>
+        </p>
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="campaign"
+            type="checkbox"
+          />Campaign organization</label
+        >
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="event"
+            type="checkbox"
+          />Event organization</label
+        >
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="connections"
+            type="checkbox"
+          />Create connections with other organizations/people</label
+        >
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="speak"
+            type="checkbox"
+          />Write and speak in public</label
+        >
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="record-you"
+            type="checkbox"
+          />Record you in videos for networks</label
+        >
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="content-creation"
+            type="checkbox"
+          />Creation creation / designs / videos</label
+        >
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="website"
+            type="checkbox"
+          />Management and development of the website</label
+        >
+        <label for="voluntary"
+          ><input
+            id="voluntary"
+            name="voluntary"
+            value="social-media"
+            type="checkbox"
+          />Social media management</label
+        >
+      </div>
 
-  <div>
-    <label>
-      <p class="title-question">Tell us a little about yourself:</p>
-      <textarea class="data" id="comments" name="comment" rows="3" cols="30" placeholder="I'm..."></textarea>
-    </label>
-    </div>
+      <div>
+        <label>
+          <p class="title-question">Tell us a little about yourself:</p>
+          <textarea
+            class="data"
+            id="comments"
+            name="comment"
+            rows="3"
+            cols="30"
+            placeholder="I'm..."
+          ></textarea>
+        </label>
+      </div>
 
-  <div class="submit-botton">
-    <input class="submit" id="submit" type="submit" value="Submit">
-    </div>
-  
-  </form>
-  
-  <h2></h2>
-   </body>
-   <footer>
-  
-     </footer>
+      <div class="submit-botton">
+        <input class="submit" id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <h2></h2>
+  </body>
+  <footer></footer>
 </html>
